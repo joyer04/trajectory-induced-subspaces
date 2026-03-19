@@ -31,6 +31,7 @@ Current exploratory write-up:
 
 - [Exploratory research note](./outputs/exploratory_research_note.md)
 - [Exploratory dashboard](./outputs/dashboard/index.html)
+- [Blog-style research report](./docs/research_blog_report.md)
 
 If you are browsing this repo on GitHub, the note and dashboard are probably the best entry points.
 
