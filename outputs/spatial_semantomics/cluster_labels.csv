@@ -1,0 +1,4 @@
+cluster_id,semantic_label,size,texts
+0,Financial modeling and analysis.,7,"['financial market volatility', 'stock price prediction', 'bond market yield', 'credit risk assessment', 'portfolio optimization', 'interest rate curve', 'options pricing model']"
+1,Artificial Intelligence,5,"['machine learning model', 'neural network training', 'deep reinforcement learning', 'computer vision segmentation', 'federated learning system']"
+2,Personalized medicine.,8,"['cancer immunotherapy', 'T cell activation', 'protein folding simulation', 'genomic mutation analysis', 'single-cell RNA sequencing', 'transformer fine-tuning', 'drug target discovery', 'gene expression profiling']"

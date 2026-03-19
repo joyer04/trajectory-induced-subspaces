@@ -1,0 +1,50 @@
+{
+  "trace_count": 10,
+  "step_count": 40,
+  "delta_count": 30,
+  "embedding_model": "local-hashing",
+  "pca_explained_variance_ratio": [
+    0.09057915210723877,
+    0.0764983594417572,
+    0.07203351706266403,
+    0.06561264395713806,
+    0.061724286526441574,
+    0.057878121733665466,
+    0.05167640373110771,
+    0.04870328679680824
+  ],
+  "task_cluster_summary": {
+    "arithmetic": {
+      "cluster_3": 1,
+      "cluster_4": 1,
+      "cluster_0": 1,
+      "cluster_1": 1
+    },
+    "symbolic_logic": {
+      "cluster_4": 2,
+      "cluster_1": 3,
+      "cluster_2": 1,
+      "cluster_0": 1,
+      "cluster_3": 1
+    },
+    "temporal_ordering": {
+      "cluster_0": 1,
+      "cluster_1": 2,
+      "cluster_3": 1,
+      "cluster_2": 1
+    },
+    "causal_micro_world": {
+      "cluster_0": 2,
+      "cluster_1": 2,
+      "cluster_4": 1,
+      "cluster_3": 1
+    },
+    "commonsense_multihop": {
+      "cluster_1": 2,
+      "cluster_4": 1,
+      "cluster_0": 1,
+      "cluster_3": 2,
+      "cluster_2": 1
+    }
+  }
+}

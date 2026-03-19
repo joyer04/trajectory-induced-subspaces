@@ -1,0 +1,5 @@
+finding_id,finding,evidence_score,sample_component,effect_component,consistency_component,notes
+F1,Static semantic axes under-explain dynamic reasoning transitions,96.7,1.0,0.918,1.0,High residual norms and low best-axis alignments persist across task/outcome groups.
+F2,Some residual geometry is prompt-recurrent rather than pure sampling noise,66.2,0.899,0.449,0.7,"Repeated-prompt significance survives across 4x5, 8x5, and temperature-conditioned runs."
+F3,Family/outcome structure matters more than temperature for residual recurrence,88.6,1.0,0.715,1.0,Temperature margins are small while recurrence remains strong in the temperature-conditioned dataset.
+F4,"Residual regimes are phase-specific and path-specific, not uniform over a trace",94.2,1.0,0.977,0.8,Different families diverge in different phases and often follow different dominant regime paths.

@@ -1,0 +1,868 @@
+window.DASHBOARD_DATA = {
+  "overview": {
+    "temperature_run": {
+      "trace_count": 300,
+      "step_count": 1302,
+      "delta_count": 1002
+    },
+    "repeated_8x5_run": {
+      "trace_count": 200,
+      "step_count": 861,
+      "delta_count": 661
+    },
+    "embedding_model": "sentence-transformers/all-MiniLM-L6-v2"
+  },
+  "finding_scores": [
+    {
+      "finding_id": "F1",
+      "finding": "Static semantic axes under-explain dynamic reasoning transitions",
+      "evidence_score": 96.7,
+      "sample_component": 1.0,
+      "effect_component": 0.918,
+      "consistency_component": 1.0,
+      "notes": "High residual norms and low best-axis alignments persist across task/outcome groups."
+    },
+    {
+      "finding_id": "F2",
+      "finding": "Some residual geometry is prompt-recurrent rather than pure sampling noise",
+      "evidence_score": 66.2,
+      "sample_component": 0.899,
+      "effect_component": 0.449,
+      "consistency_component": 0.7,
+      "notes": "Repeated-prompt significance survives across 4x5, 8x5, and temperature-conditioned runs."
+    },
+    {
+      "finding_id": "F3",
+      "finding": "Family/outcome structure matters more than temperature for residual recurrence",
+      "evidence_score": 88.6,
+      "sample_component": 1.0,
+      "effect_component": 0.715,
+      "consistency_component": 1.0,
+      "notes": "Temperature margins are small while recurrence remains strong in the temperature-conditioned dataset."
+    },
+    {
+      "finding_id": "F4",
+      "finding": "Residual regimes are phase-specific and path-specific, not uniform over a trace",
+      "evidence_score": 94.2,
+      "sample_component": 1.0,
+      "effect_component": 0.977,
+      "consistency_component": 0.8,
+      "notes": "Different families diverge in different phases and often follow different dominant regime paths."
+    }
+  ],
+  "alignment_summary": [
+    {
+      "task_family": "arithmetic",
+      "outcome": "correct",
+      "best_abs_alignment": 0.1242839783243835,
+      "residual_energy": 0.9903312595685324
+    },
+    {
+      "task_family": "arithmetic",
+      "outcome": "incorrect",
+      "best_abs_alignment": 0.1420811140288909,
+      "residual_energy": 0.987442570924759
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "correct",
+      "best_abs_alignment": 0.1683738193164269,
+      "residual_energy": 0.9845053717494012
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "incorrect",
+      "best_abs_alignment": 0.1562214109322263,
+      "residual_energy": 0.9866185842288864
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "correct",
+      "best_abs_alignment": 0.1439969922260691,
+      "residual_energy": 0.987859234213829
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "incorrect",
+      "best_abs_alignment": 0.1498953808958713,
+      "residual_energy": 0.9870133858460648
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "correct",
+      "best_abs_alignment": 0.1293000110502665,
+      "residual_energy": 0.9898119711627564
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "incorrect",
+      "best_abs_alignment": 0.1321538633938077,
+      "residual_energy": 0.990119634549829
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "correct",
+      "best_abs_alignment": 0.1747715127802341,
+      "residual_energy": 0.9812348568550894
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "incorrect",
+      "best_abs_alignment": 0.1552075085540612,
+      "residual_energy": 0.9866820958753428
+    }
+  ],
+  "residual_summary": [
+    {
+      "task_family": "arithmetic",
+      "outcome": "correct",
+      "static_projection_norm_mean": 0.1668533,
+      "static_projection_norm_median": 0.14770406,
+      "count": 150,
+      "residual_norm_mean": 0.98280793,
+      "residual_norm_median": 0.9890316
+    },
+    {
+      "task_family": "arithmetic",
+      "outcome": "incorrect",
+      "static_projection_norm_mean": 0.18092641,
+      "static_projection_norm_median": 0.1555807,
+      "count": 30,
+      "residual_norm_mean": 0.9804007,
+      "residual_norm_median": 0.9878231
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "correct",
+      "static_projection_norm_mean": 0.22825156,
+      "static_projection_norm_median": 0.2276105,
+      "count": 120,
+      "residual_norm_mean": 0.97132593,
+      "residual_norm_median": 0.97375154
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "incorrect",
+      "static_projection_norm_mean": 0.22024935,
+      "static_projection_norm_median": 0.2240766,
+      "count": 72,
+      "residual_norm_mean": 0.9735719,
+      "residual_norm_median": 0.9745656
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "correct",
+      "static_projection_norm_mean": 0.19422074,
+      "static_projection_norm_median": 0.18350443,
+      "count": 96,
+      "residual_norm_mean": 0.9782231,
+      "residual_norm_median": 0.98301685
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "incorrect",
+      "static_projection_norm_mean": 0.2014571,
+      "static_projection_norm_median": 0.19364305,
+      "count": 156,
+      "residual_norm_mean": 0.97683156,
+      "residual_norm_median": 0.98107207
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "correct",
+      "static_projection_norm_mean": 0.17117685,
+      "static_projection_norm_median": 0.15710196,
+      "count": 96,
+      "residual_norm_mean": 0.9826338,
+      "residual_norm_median": 0.9875821
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "incorrect",
+      "static_projection_norm_mean": 0.17640425,
+      "static_projection_norm_median": 0.16277461,
+      "count": 79,
+      "residual_norm_mean": 0.98282874,
+      "residual_norm_median": 0.9866633
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "correct",
+      "static_projection_norm_mean": 0.238389,
+      "static_projection_norm_median": 0.2207796,
+      "count": 107,
+      "residual_norm_mean": 0.9650471,
+      "residual_norm_median": 0.97532374
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "incorrect",
+      "static_projection_norm_mean": 0.2027028,
+      "static_projection_norm_median": 0.20139113,
+      "count": 96,
+      "residual_norm_mean": 0.97678334,
+      "residual_norm_median": 0.9795008
+    }
+  ],
+  "phase_path_divergence": [
+    {
+      "task_family": "arithmetic",
+      "correct_dominant_path": "NA->2->4",
+      "incorrect_dominant_path": "NA->0->4",
+      "same_dominant_path": false,
+      "path_js_divergence": 0.8877807220333356
+    },
+    {
+      "task_family": "temporal_ordering",
+      "correct_dominant_path": "3->4->3",
+      "incorrect_dominant_path": "NA->3->1",
+      "same_dominant_path": false,
+      "path_js_divergence": 0.6380049402684271
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "correct_dominant_path": "1->3->1",
+      "incorrect_dominant_path": "1->3->1",
+      "same_dominant_path": true,
+      "path_js_divergence": 0.6016187946613851
+    },
+    {
+      "task_family": "causal_micro_world",
+      "correct_dominant_path": "4->1->3",
+      "incorrect_dominant_path": "1->3->3",
+      "same_dominant_path": false,
+      "path_js_divergence": 0.4954222421064836
+    },
+    {
+      "task_family": "symbolic_logic",
+      "correct_dominant_path": "3->0->0",
+      "incorrect_dominant_path": "NA->3->0",
+      "same_dominant_path": false,
+      "path_js_divergence": 0.3094960460172909
+    }
+  ],
+  "phase_path_dominant": [
+    {
+      "task_family": "arithmetic",
+      "outcome": "correct",
+      "dominant_phase_path": "NA->2->4",
+      "dominant_phase_path_count": 19
+    },
+    {
+      "task_family": "arithmetic",
+      "outcome": "incorrect",
+      "dominant_phase_path": "NA->0->4",
+      "dominant_phase_path_count": 4
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "correct",
+      "dominant_phase_path": "4->1->3",
+      "dominant_phase_path_count": 9
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "incorrect",
+      "dominant_phase_path": "1->3->3",
+      "dominant_phase_path_count": 6
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "correct",
+      "dominant_phase_path": "1->3->1",
+      "dominant_phase_path_count": 3
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "incorrect",
+      "dominant_phase_path": "1->3->1",
+      "dominant_phase_path_count": 3
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "correct",
+      "dominant_phase_path": "3->0->0",
+      "dominant_phase_path_count": 8
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "incorrect",
+      "dominant_phase_path": "NA->3->0",
+      "dominant_phase_path_count": 9
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "correct",
+      "dominant_phase_path": "3->4->3",
+      "dominant_phase_path_count": 2
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "incorrect",
+      "dominant_phase_path": "NA->3->1",
+      "dominant_phase_path_count": 14
+    }
+  ],
+  "step_phase_failure_divergence": [
+    {
+      "task_family": "arithmetic",
+      "phase": "middle",
+      "correct_count": 58,
+      "incorrect_count": 11,
+      "correct_mode_cluster": 2,
+      "incorrect_mode_cluster": 3,
+      "same_mode_cluster": false,
+      "js_divergence": 0.418887781481455,
+      "tv_distance": 0.6332288401253918,
+      "correct_residual_norm_mean": 0.990889396724138,
+      "incorrect_residual_norm_mean": 0.9785478936363636,
+      "residual_norm_gap": -0.0123415030877741
+    },
+    {
+      "task_family": "arithmetic",
+      "phase": "early",
+      "correct_count": 27,
+      "incorrect_count": 6,
+      "correct_mode_cluster": 2,
+      "incorrect_mode_cluster": 0,
+      "same_mode_cluster": false,
+      "js_divergence": 0.349829885440357,
+      "tv_distance": 0.611111111111111,
+      "correct_residual_norm_mean": 0.9832484462962964,
+      "incorrect_residual_norm_mean": 0.9926533733333334,
+      "residual_norm_gap": 0.0094049270370369
+    },
+    {
+      "task_family": "temporal_ordering",
+      "phase": "late",
+      "correct_count": 43,
+      "incorrect_count": 41,
+      "correct_mode_cluster": 3,
+      "incorrect_mode_cluster": 1,
+      "same_mode_cluster": false,
+      "js_divergence": 0.1923809235295835,
+      "tv_distance": 0.391378332387975,
+      "correct_residual_norm_mean": 0.9659500439534884,
+      "incorrect_residual_norm_mean": 0.97772082,
+      "residual_norm_gap": 0.0117707760465115
+    },
+    {
+      "task_family": "causal_micro_world",
+      "phase": "early",
+      "correct_count": 35,
+      "incorrect_count": 16,
+      "correct_mode_cluster": 4,
+      "incorrect_mode_cluster": 1,
+      "same_mode_cluster": false,
+      "js_divergence": 0.1773573722417627,
+      "tv_distance": 0.3660714285714286,
+      "correct_residual_norm_mean": 0.9757756897142856,
+      "incorrect_residual_norm_mean": 0.971134046875,
+      "residual_norm_gap": -0.0046416428392855
+    },
+    {
+      "task_family": "temporal_ordering",
+      "phase": "early",
+      "correct_count": 25,
+      "incorrect_count": 17,
+      "correct_mode_cluster": 4,
+      "incorrect_mode_cluster": 4,
+      "same_mode_cluster": true,
+      "js_divergence": 0.1003761274783911,
+      "tv_distance": 0.3435294117647058,
+      "correct_residual_norm_mean": 0.9690420892,
+      "incorrect_residual_norm_mean": 0.9686735482352942,
+      "residual_norm_gap": -0.0003685409647057
+    },
+    {
+      "task_family": "temporal_ordering",
+      "phase": "middle",
+      "correct_count": 39,
+      "incorrect_count": 38,
+      "correct_mode_cluster": 4,
+      "incorrect_mode_cluster": 3,
+      "same_mode_cluster": false,
+      "js_divergence": 0.0976708782740716,
+      "tv_distance": 0.3495276653171389,
+      "correct_residual_norm_mean": 0.9614906171794873,
+      "incorrect_residual_norm_mean": 0.9793999518421052,
+      "residual_norm_gap": 0.017909334662618
+    },
+    {
+      "task_family": "causal_micro_world",
+      "phase": "late",
+      "correct_count": 48,
+      "incorrect_count": 30,
+      "correct_mode_cluster": 3,
+      "incorrect_mode_cluster": 3,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0598501530710042,
+      "tv_distance": 0.2041666666666667,
+      "correct_residual_norm_mean": 0.968569981875,
+      "incorrect_residual_norm_mean": 0.9726488213333336,
+      "residual_norm_gap": 0.0040788394583335
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "phase": "late",
+      "correct_count": 43,
+      "incorrect_count": 66,
+      "correct_mode_cluster": 1,
+      "incorrect_mode_cluster": 3,
+      "same_mode_cluster": false,
+      "js_divergence": 0.0596795103432049,
+      "tv_distance": 0.2653276955602537,
+      "correct_residual_norm_mean": 0.9761948058139536,
+      "incorrect_residual_norm_mean": 0.9765318437878788,
+      "residual_norm_gap": 0.0003370379739251
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "phase": "early",
+      "correct_count": 26,
+      "incorrect_count": 43,
+      "correct_mode_cluster": 1,
+      "incorrect_mode_cluster": 1,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0552997902316711,
+      "tv_distance": 0.2343470483005366,
+      "correct_residual_norm_mean": 0.9789662096153846,
+      "incorrect_residual_norm_mean": 0.9739803839534884,
+      "residual_norm_gap": -0.004985825661896
+    },
+    {
+      "task_family": "arithmetic",
+      "phase": "late",
+      "correct_count": 65,
+      "incorrect_count": 13,
+      "correct_mode_cluster": 4,
+      "incorrect_mode_cluster": 4,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0524590893284638,
+      "tv_distance": 0.1538461538461538,
+      "correct_residual_norm_mean": 0.975413850153846,
+      "incorrect_residual_norm_mean": 0.976313356923077,
+      "residual_norm_gap": 0.0008995067692308
+    },
+    {
+      "task_family": "symbolic_logic",
+      "phase": "late",
+      "correct_count": 40,
+      "incorrect_count": 34,
+      "correct_mode_cluster": 0,
+      "incorrect_mode_cluster": 0,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0406130876244659,
+      "tv_distance": 0.163235294117647,
+      "correct_residual_norm_mean": 0.983481767,
+      "incorrect_residual_norm_mean": 0.9796958261764706,
+      "residual_norm_gap": -0.0037859408235294
+    },
+    {
+      "task_family": "causal_micro_world",
+      "phase": "middle",
+      "correct_count": 37,
+      "incorrect_count": 26,
+      "correct_mode_cluster": 1,
+      "incorrect_mode_cluster": 1,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0380612697761917,
+      "tv_distance": 0.1372141372141372,
+      "correct_residual_norm_mean": 0.9706919291891892,
+      "incorrect_residual_norm_mean": 0.9761372053846156,
+      "residual_norm_gap": 0.0054452761954261
+    },
+    {
+      "task_family": "symbolic_logic",
+      "phase": "early",
+      "correct_count": 23,
+      "incorrect_count": 16,
+      "correct_mode_cluster": 3,
+      "incorrect_mode_cluster": 3,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0327957144772377,
+      "tv_distance": 0.1331521739130435,
+      "correct_residual_norm_mean": 0.981222252608696,
+      "incorrect_residual_norm_mean": 0.98981457625,
+      "residual_norm_gap": 0.008592323641304
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "phase": "middle",
+      "correct_count": 27,
+      "incorrect_count": 47,
+      "correct_mode_cluster": 1,
+      "incorrect_mode_cluster": 1,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0297981646037151,
+      "tv_distance": 0.1371158392434988,
+      "correct_residual_norm_mean": 0.980737828148148,
+      "incorrect_residual_norm_mean": 0.9798610789361702,
+      "residual_norm_gap": -0.0008767492119776
+    },
+    {
+      "task_family": "symbolic_logic",
+      "phase": "middle",
+      "correct_count": 33,
+      "incorrect_count": 29,
+      "correct_mode_cluster": 0,
+      "incorrect_mode_cluster": 0,
+      "same_mode_cluster": true,
+      "js_divergence": 0.0166015502311654,
+      "tv_distance": 0.0543364681295716,
+      "correct_residual_norm_mean": 0.9825898684848484,
+      "incorrect_residual_norm_mean": 0.982647631724138,
+      "residual_norm_gap": 5.7763239289521096e-05
+    }
+  ],
+  "phase_predictability": [
+    {
+      "task_family": "arithmetic",
+      "feature_set": "early_only",
+      "cv_accuracy": 0.8166666666666668,
+      "cv_balanced_accuracy": 0.5
+    },
+    {
+      "task_family": "arithmetic",
+      "feature_set": "early_middle",
+      "cv_accuracy": 0.8166666666666668,
+      "cv_balanced_accuracy": 0.5622222222222223
+    },
+    {
+      "task_family": "arithmetic",
+      "feature_set": "full_path",
+      "cv_accuracy": 0.8,
+      "cv_balanced_accuracy": 0.5522222222222222
+    },
+    {
+      "task_family": "causal_micro_world",
+      "feature_set": "early_only",
+      "cv_accuracy": 0.7166666666666667,
+      "cv_balanced_accuracy": 0.6757142857142858
+    },
+    {
+      "task_family": "causal_micro_world",
+      "feature_set": "early_middle",
+      "cv_accuracy": 0.6833333333333333,
+      "cv_balanced_accuracy": 0.6471428571428572
+    },
+    {
+      "task_family": "causal_micro_world",
+      "feature_set": "full_path",
+      "cv_accuracy": 0.6666666666666666,
+      "cv_balanced_accuracy": 0.6328571428571429
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "feature_set": "early_only",
+      "cv_accuracy": 0.5,
+      "cv_balanced_accuracy": 0.44
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "feature_set": "early_middle",
+      "cv_accuracy": 0.6166666666666667,
+      "cv_balanced_accuracy": 0.5742857142857142
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "feature_set": "full_path",
+      "cv_accuracy": 0.5833333333333333,
+      "cv_balanced_accuracy": 0.5342857142857143
+    },
+    {
+      "task_family": "symbolic_logic",
+      "feature_set": "early_only",
+      "cv_accuracy": 0.4666666666666667,
+      "cv_balanced_accuracy": 0.4666666666666666
+    },
+    {
+      "task_family": "symbolic_logic",
+      "feature_set": "early_middle",
+      "cv_accuracy": 0.4833333333333334,
+      "cv_balanced_accuracy": 0.4809523809523808
+    },
+    {
+      "task_family": "symbolic_logic",
+      "feature_set": "full_path",
+      "cv_accuracy": 0.4333333333333333,
+      "cv_balanced_accuracy": 0.4309523809523809
+    },
+    {
+      "task_family": "temporal_ordering",
+      "feature_set": "early_only",
+      "cv_accuracy": 0.6333333333333333,
+      "cv_balanced_accuracy": 0.6180952380952381
+    },
+    {
+      "task_family": "temporal_ordering",
+      "feature_set": "early_middle",
+      "cv_accuracy": 0.6666666666666667,
+      "cv_balanced_accuracy": 0.6652380952380952
+    },
+    {
+      "task_family": "temporal_ordering",
+      "feature_set": "full_path",
+      "cv_accuracy": 0.7333333333333334,
+      "cv_balanced_accuracy": 0.7352380952380951
+    }
+  ],
+  "late_cluster_predictability": [
+    {
+      "task_family": "arithmetic",
+      "feature_set": "early_only",
+      "late_cluster_rule_accuracy": 0.4814814814814814
+    },
+    {
+      "task_family": "arithmetic",
+      "feature_set": "early_middle",
+      "late_cluster_rule_accuracy": 0.7407407407407407
+    },
+    {
+      "task_family": "causal_micro_world",
+      "feature_set": "early_only",
+      "late_cluster_rule_accuracy": 0.8367346938775511
+    },
+    {
+      "task_family": "causal_micro_world",
+      "feature_set": "early_middle",
+      "late_cluster_rule_accuracy": 0.9183673469387756
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "feature_set": "early_only",
+      "late_cluster_rule_accuracy": 0.4166666666666667
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "feature_set": "early_middle",
+      "late_cluster_rule_accuracy": 0.4833333333333333
+    },
+    {
+      "task_family": "symbolic_logic",
+      "feature_set": "early_only",
+      "late_cluster_rule_accuracy": 0.4736842105263157
+    },
+    {
+      "task_family": "symbolic_logic",
+      "feature_set": "early_middle",
+      "late_cluster_rule_accuracy": 0.6052631578947368
+    },
+    {
+      "task_family": "temporal_ordering",
+      "feature_set": "early_only",
+      "late_cluster_rule_accuracy": 0.53125
+    },
+    {
+      "task_family": "temporal_ordering",
+      "feature_set": "early_middle",
+      "late_cluster_rule_accuracy": 0.625
+    }
+  ],
+  "temperature_family_margin": [
+    {
+      "task_family": "arithmetic",
+      "same_temp_js": 0.1820355560905739,
+      "cross_temp_js": 0.2186744495245547,
+      "temperature_margin": 0.0366388934339808,
+      "same_temp_tv": 0.2576747720364741,
+      "cross_temp_tv": 0.2984126984126984
+    },
+    {
+      "task_family": "causal_micro_world",
+      "same_temp_js": 0.0983032789803294,
+      "cross_temp_js": 0.100500941175794,
+      "temperature_margin": 0.0021976621954646,
+      "same_temp_tv": 0.1727182539682539,
+      "cross_temp_tv": 0.1965552178318135
+    },
+    {
+      "task_family": "temporal_ordering",
+      "same_temp_js": 0.198791284438765,
+      "cross_temp_js": 0.1900602965006392,
+      "temperature_margin": -0.0087309879381258,
+      "same_temp_tv": 0.2728319783197832,
+      "cross_temp_tv": 0.2648936170212765
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "same_temp_js": 0.2281857497144099,
+      "cross_temp_js": 0.219181302541366,
+      "temperature_margin": -0.0090044471730438,
+      "same_temp_tv": 0.3314550264550264,
+      "cross_temp_tv": 0.3281166399143926
+    },
+    {
+      "task_family": "symbolic_logic",
+      "same_temp_js": 0.1105662864881788,
+      "cross_temp_js": 0.0959253460682123,
+      "temperature_margin": -0.0146409404199665,
+      "same_temp_tv": 0.2204241071428571,
+      "cross_temp_tv": 0.1936507936507936
+    }
+  ],
+  "prompt_recurrence_significance": [
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "correct",
+      "n_prompts": 7,
+      "n_traces": 18,
+      "observed_prompt_margin": 0.3497637429157587,
+      "observed_pairwise_margin": 0.3294578272587036,
+      "bootstrap_ci_low": 0.2579792803076911,
+      "bootstrap_ci_high": 0.4235462496824475,
+      "positive_prompt_share": 1.0,
+      "permutation_null_mean": 0.0014450661188242,
+      "permutation_null_std": 0.0676337292316985,
+      "permutation_p_value": 0.0009990009990009,
+      "permutation_z_score": 4.8498399373510575
+    },
+    {
+      "task_family": "symbolic_logic",
+      "outcome": "incorrect",
+      "n_prompts": 7,
+      "n_traces": 22,
+      "observed_prompt_margin": 0.2478041143486427,
+      "observed_pairwise_margin": 0.2543056342632834,
+      "bootstrap_ci_low": 0.1312713594530026,
+      "bootstrap_ci_high": 0.3779092406099204,
+      "positive_prompt_share": 1.0,
+      "permutation_null_mean": 0.001966197430406,
+      "permutation_null_std": 0.0576915807659561,
+      "permutation_p_value": 0.0009990009990009,
+      "permutation_z_score": 4.373938683645552
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "incorrect",
+      "n_prompts": 7,
+      "n_traces": 28,
+      "observed_prompt_margin": 0.1917253269777947,
+      "observed_pairwise_margin": 0.2337904756400322,
+      "bootstrap_ci_low": 0.0701585243886059,
+      "bootstrap_ci_high": 0.3064785266485064,
+      "positive_prompt_share": 0.8571428571428571,
+      "permutation_null_mean": 0.0004797536956021,
+      "permutation_null_std": 0.0429237059852671,
+      "permutation_p_value": 0.0009990009990009,
+      "permutation_z_score": 5.4354747939171455
+    },
+    {
+      "task_family": "arithmetic",
+      "outcome": "correct",
+      "n_prompts": 8,
+      "n_traces": 25,
+      "observed_prompt_margin": 0.1510017195929471,
+      "observed_pairwise_margin": 0.2293350109231133,
+      "bootstrap_ci_low": 0.0647265238910127,
+      "bootstrap_ci_high": 0.2394368372248716,
+      "positive_prompt_share": 0.875,
+      "permutation_null_mean": 0.0011534275002954,
+      "permutation_null_std": 0.0444818605465939,
+      "permutation_p_value": 0.0009990009990009,
+      "permutation_z_score": 5.129767069518187
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "correct",
+      "n_prompts": 8,
+      "n_traces": 23,
+      "observed_prompt_margin": 0.1816358982669031,
+      "observed_pairwise_margin": 0.2012286804811217,
+      "bootstrap_ci_low": 0.0820146495211769,
+      "bootstrap_ci_high": 0.3217303402797859,
+      "positive_prompt_share": 1.0,
+      "permutation_null_mean": 0.0002843726614438,
+      "permutation_null_std": 0.0440108027094236,
+      "permutation_p_value": 0.0009990009990009,
+      "permutation_z_score": 4.565795110495713
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "correct",
+      "n_prompts": 7,
+      "n_traces": 19,
+      "observed_prompt_margin": 0.0335640885201207,
+      "observed_pairwise_margin": 0.0856544475250707,
+      "bootstrap_ci_low": -0.0171960624281447,
+      "bootstrap_ci_high": 0.0830137859672744,
+      "positive_prompt_share": 0.5714285714285714,
+      "permutation_null_mean": -0.0016313705401714,
+      "permutation_null_std": 0.0470741761039092,
+      "permutation_p_value": 0.0279720279720279,
+      "permutation_z_score": 1.854218709480365
+    },
+    {
+      "task_family": "commonsense_multihop",
+      "outcome": "incorrect",
+      "n_prompts": 7,
+      "n_traces": 21,
+      "observed_prompt_margin": 0.0482819322639477,
+      "observed_pairwise_margin": 0.0599355896611808,
+      "bootstrap_ci_low": -0.0206545738725188,
+      "bootstrap_ci_high": 0.1145056648433568,
+      "positive_prompt_share": 0.6666666666666666,
+      "permutation_null_mean": 0.0005615992289825,
+      "permutation_null_std": 0.0377238260179489,
+      "permutation_p_value": 0.0599400599400599,
+      "permutation_z_score": 1.5739122114482311
+    },
+    {
+      "task_family": "arithmetic",
+      "outcome": "incorrect",
+      "n_prompts": 7,
+      "n_traces": 15,
+      "observed_prompt_margin": 0.1125073556474957,
+      "observed_pairwise_margin": 0.0836302793146806,
+      "bootstrap_ci_low": -0.0243170671068124,
+      "bootstrap_ci_high": 0.2566837220642308,
+      "positive_prompt_share": 0.6,
+      "permutation_null_mean": -9.934501973793977e-07,
+      "permutation_null_std": 0.0577881762707939,
+      "permutation_p_value": 0.0859140859140859,
+      "permutation_z_score": 1.4472038773638405
+    },
+    {
+      "task_family": "temporal_ordering",
+      "outcome": "correct",
+      "n_prompts": 6,
+      "n_traces": 12,
+      "observed_prompt_margin": 0.2703947178066972,
+      "observed_pairwise_margin": 0.0630001189025031,
+      "bootstrap_ci_low": -0.0137765688575766,
+      "bootstrap_ci_high": 0.4693903175128212,
+      "positive_prompt_share": 0.6666666666666666,
+      "permutation_null_mean": 0.0020455705936309,
+      "permutation_null_std": 0.0880672447864851,
+      "permutation_p_value": 0.2497502497502497,
+      "permutation_z_score": 0.6921364288919633
+    },
+    {
+      "task_family": "causal_micro_world",
+      "outcome": "incorrect",
+      "n_prompts": 7,
+      "n_traces": 17,
+      "observed_prompt_margin": 0.060638304198924,
+      "observed_pairwise_margin": 0.0057803757649806,
+      "bootstrap_ci_low": -0.0481250807749518,
+      "bootstrap_ci_high": 0.1546920685877071,
+      "positive_prompt_share": 0.8,
+      "permutation_null_mean": 0.0020153884321654,
+      "permutation_null_std": 0.052092878346086,
+      "permutation_p_value": 0.4515484515484515,
+      "permutation_z_score": 0.0722745114562883
+    }
+  ],
+  "prompt_stability_overall": [
+    {
+      "mean_within_prompt_js": 0.2762490056576641,
+      "mean_between_prompt_js": 0.4352945465877445,
+      "mean_js_margin": 0.161578791102758,
+      "mean_js_ratio": 0.6541895538181419,
+      "mean_centroid_entropy": 1.6013062853906983,
+      "mean_dominant_cluster_share": 0.4581159177285939,
+      "mean_dominant_outcome_share": 0.74
+    }
+  ],
+  "exploratory_note_path": "outputs/exploratory_research_note.md"
+};

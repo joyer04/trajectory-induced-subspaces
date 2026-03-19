@@ -1,0 +1,4 @@
+left_model,right_model,adjusted_rand_index
+sentence-transformers/all-MiniLM-L6-v2,sentence-transformers/all-mpnet-base-v2,0.59005873030704
+sentence-transformers/all-MiniLM-L6-v2,BAAI/bge-small-en-v1.5,0.6978451923006915
+sentence-transformers/all-mpnet-base-v2,BAAI/bge-small-en-v1.5,0.6997990803518309

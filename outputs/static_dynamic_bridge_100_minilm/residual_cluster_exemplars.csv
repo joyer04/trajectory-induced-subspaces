@@ -1,0 +1,26 @@
+residual_cluster,task_family,outcome,trace_id,residual_norm,static_projection_norm,transition_text
+0,causal_micro_world,incorrect,trace_00054,0.9990612,0.043320976,"As the ice melts, it turns into liquid water.  ==>  The melted water collects at the bottom of the freezer."
+0,commonsense_multihop,incorrect,trace_00005,0.99882394,0.048483968,"As the ice cube melted, it released latent heat energy into its surroundings.  ==>  This released heat energy onto the metal tray."
+0,temporal_ordering,incorrect,trace_00093,0.99773455,0.06727325,Review  ==>  Drafting
+0,symbolic_logic,incorrect,trace_00042,0.99744534,0.07143376,"However, since P is not sufficient for Q, we cannot conclude that Q must have occurred solely because P occurred.  ==>  We can only conclude that Q may or may not have occurred given that P occurred."
+0,arithmetic,correct,trace_00076,0.99647635,0.08387448,Time for first part of journey = 1 hour  ==>  Time for second part of journey = 2 hours
+1,temporal_ordering,incorrect,trace_00088,0.99846107,0.055457275,The bell rang.  ==>  The lecture began.
+1,temporal_ordering,incorrect,trace_00068,0.9973968,0.072107345,Repair  ==>  Testing
+1,symbolic_logic,correct,trace_00017,0.9972255,0.074438624,We know that if some rens are fads.  ==>  All fads are jops.
+1,temporal_ordering,correct,trace_00023,0.99682975,0.079564266,"Identify that Task Z finished before Task X.  ==>  Determine the order of Tasks X and Y based on the information that Task W finished after Task X but before Task Y, which implies Task X must have finished before Task W."
+1,temporal_ordering,incorrect,trace_00093,0.99508303,0.099043556,Revision  ==>  Review
+2,temporal_ordering,incorrect,trace_00078,0.99626553,0.086342186,"The only activity mentioned that could fit between attending class and eating lunch is practicing a sport (practice).  ==>  Therefore, Hana practiced before eating lunch."
+2,temporal_ordering,incorrect,trace_00058,0.99572486,0.09236933,Sorting  ==>  Delivery
+2,arithmetic,correct,trace_00021,0.9955294,0.094451725,Subtract the returned boxes due to labeling errors: 415 - 58 = 357  ==>  The remaining boxes that were successfully delivered are 357
+2,temporal_ordering,incorrect,trace_00083,0.9952159,0.09770025,Evaluation  ==>  Training
+2,arithmetic,correct,trace_00041,0.99497,0.100172974,"To find the value of ?, we subtract 6 from both sides of the second equation: ? = 14 - 6  ==>  Solving for ?, we get: ? = 8"
+3,temporal_ordering,incorrect,trace_00068,0.9980308,0.06272502,Inspection  ==>  Repair
+3,symbolic_logic,correct,trace_00032,0.9973935,0.072154194,We know that passing the exam is sufficient for receiving a certificate.  ==>  Mina received no certificate.
+3,arithmetic,correct,trace_00036,0.9973586,0.07263381,"We know that this expression equals 67, so we can set up an equation: 5x + 12 = 67.  ==>  To solve for x, subtract 12 from both sides of the equation: 5x = 55."
+3,symbolic_logic,incorrect,trace_00072,0.99727803,0.07373399,"Since no darps are mels (step 3), we can conclude that there are no mels among the vents that are also darps.  ==>  However, we cannot conclude that all crols are not mels because it's possible that some crols are not vents or darps."
+3,symbolic_logic,incorrect,trace_00042,0.9958547,0.0909582,"Since P is necessary for Q, if P occurs, then it is possible that Q has occurred.  ==>  However, since P is not sufficient for Q, we cannot conclude that Q must have occurred solely because P occurred."
+4,symbolic_logic,correct,trace_00062,0.99853456,0.054117046,Nels are a subset of quars (from step 1)  ==>  Quars are a subset of brims (from step 2)
+4,temporal_ordering,incorrect,trace_00098,0.99802,0.06289657,Check-in  ==>  Security
+4,arithmetic,correct,trace_00046,0.9959751,0.089630686,Add 11 to both sides of the equation: x * 7 = 45 + 11.  ==>  Simplify the right side of the equation: x * 7 = 56.
+4,arithmetic,correct,trace_00041,0.9954354,0.095437214,Multiply both sides by 4 to solve for x: x = 8 * 4  ==>  Calculate the product: x = 32
+4,causal_micro_world,correct,trace_00009,0.9935075,0.11376677,Given condition for alarm to trigger: Both the sensor failing and the backup being off.  ==>  Sensor has failed.

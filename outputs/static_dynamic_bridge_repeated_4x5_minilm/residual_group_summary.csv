@@ -1,0 +1,12 @@
+task_family,outcome,static_projection_norm_mean,static_projection_norm_median,count,residual_norm_mean,residual_norm_median
+arithmetic,correct,0.17587325,0.1686404,44,0.98236597,0.9856776
+arithmetic,incorrect,0.21556868,0.20589729,11,0.97457045,0.97857356
+causal_micro_world,correct,0.22946037,0.2315638,48,0.9701898,0.9728194
+causal_micro_world,incorrect,0.27082616,0.27976078,20,0.95815754,0.96006954
+causal_micro_world,uncertain,0.23806648,0.23995921,6,0.9656703,0.97031933
+commonsense_multihop,correct,0.24120805,0.24401176,34,0.96709377,0.9697722
+commonsense_multihop,incorrect,0.2056309,0.19392581,53,0.9756435,0.9810162
+symbolic_logic,correct,0.1889933,0.17290145,29,0.97970897,0.98493916
+symbolic_logic,incorrect,0.15568316,0.15449639,34,0.9866395,0.9879843
+temporal_ordering,correct,0.19994329,0.19822675,28,0.9772853,0.9801488
+temporal_ordering,incorrect,0.21246414,0.20822988,44,0.974659,0.97803223

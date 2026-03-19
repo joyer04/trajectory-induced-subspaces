@@ -1,0 +1,41 @@
+text,cluster_id,axis_1,axis_2,axis_3,axis_4,axis_5
+Calculate total number of cans collected: 14 (Monday) + 19 (Tuesday) = 33,4,0.112630606,-0.31494558,-0.32081935,0.265122,-0.15442872
+Subtract the number of damaged cans: 33 - 6 = 27,4,0.04778211,-0.3259857,-0.27570626,0.20178778,-0.10972534
+The remaining cans are usable.,4,-0.10226226,-0.13283874,-0.3780679,0.13189411,-0.07697892
+We know that all glims are bloops.,3,-0.4618724,0.22039573,0.16721357,-0.041085564,-0.1995652
+Some bloops are razs.,3,-0.4788687,0.12926252,0.31709754,-0.0049948404,-0.28239375
+"From steps 1 and 2, we can infer that at least one bloop is a raz (since there exists a bloop that is also a raz).",3,-0.4330682,-0.057401795,0.34334752,-0.11281445,-0.13288246
+"However, this does not necessarily mean that some glims are razs.",3,-0.6252582,0.15028296,0.25516832,-0.0071828524,-0.2590031
+We cannot conclude that all glims are razs or even most glims are razs.,3,-0.6530871,0.08438107,0.24396326,-0.01762204,-0.16237675
+"The only thing we can confirm is that at least one raz must be a gloom (since it's also a bloop), but we don't know how many glims are razs.",3,-0.56794584,0.08268067,0.28562492,0.052886397,-0.27026856
+Determine the order of arrival for each person.,2,0.13531964,-0.4911442,0.06239854,-0.3021124,-0.07892048
+Compare the orders to find a common point.,2,-0.06332118,-0.45200923,0.002778775,-0.2904278,-0.02902741
+Identify who arrived first based on their position in the sequence.,2,0.16535813,-0.41435912,0.21348378,-0.41728625,0.011253049
+This month: Rabbit population falls.,0,0.12332827,-0.06955718,0.05098796,0.3486239,-0.2681768
+Next month: Plant growth falls due to reduced rainfall.,0,0.19011249,0.250925,0.077725366,0.47572574,-0.4110733
+The following month: Plant growth continues to fall as rainfall remains low.,0,0.21400869,0.1917379,0.091650054,0.4733678,-0.3533964
+The month after that: Plant growth is expected to be significantly lower than usual.,0,0.19345717,0.18236093,-0.0120721515,0.38366547,-0.3964229
+The ice cube began to melt due to the heat from the sun.,1,0.27990663,0.24540187,0.18394087,-0.18888514,0.014952721
+"As the ice cube melted, it released water vapor into the air.",1,0.2924295,0.3500064,0.16124687,-0.23051167,-0.033859026
+"This water vapor condensed onto the metal tray, causing it to become wet.",1,0.321058,0.43514004,0.055002276,-0.16524877,0.018242726
+"Since the tray is made of a material that can conduct and retain heat (metal), it absorbed some of the sun's energy, contributing to its own warming.",1,0.30896392,0.33340418,0.01737967,-0.073490836,0.028530957
+The combination of the ice cube melting and the tray absorbing heat led to the tray becoming wet.,1,0.36437213,0.41078594,0.15568781,-0.2401762,-0.041410487
+Calculate the total number of pencils sold: 23 (morning) + 18 (afternoon) = 41,4,0.16342238,-0.4259021,-0.43455464,0.20152129,-0.10675853
+Subtract the returned pencils from the total: 41 - 7 = 34,4,0.096439905,-0.45347172,-0.3923961,0.15348594,-0.08492623
+The number of pencils that stayed sold is 34.,4,0.052193694,-0.35956332,-0.41690212,0.2563188,-0.075511135
+Given that no kets are lums.,3,-0.52041537,0.20561202,-0.3755264,-0.10833379,0.25089675
+Given that all lums are nops.,3,-0.5594553,0.08891275,-0.327975,-0.08702443,0.26057747
+"Since all lums are nops (step 2), it logically follows that no kets can be lums, as they are a subset of lums (step 1).",3,-0.5570192,0.17545901,-0.37875843,-0.13225827,0.35291946
+"Therefore, since no kets can be lums and all lums are nops, it must be true that no kets are nops.",3,-0.52618504,0.14826575,-0.40081257,-0.10232908,0.34223005
+Identify the sequence of events: A -> B -> C,2,0.174877,-0.43480682,0.28284958,-0.2827928,0.01881056
+Determine the order in which the events occurred,2,0.23897935,-0.540573,0.22087196,-0.33129615,-0.025369233
+"Since A is first, followed by B, and then C, we can conclude that:",2,-0.011579149,-0.30291757,0.12414492,-0.29299974,0.083364666
+The event that happened last is Event C,2,0.18617037,-0.38077608,0.22627452,-0.18660457,0.025314696
+Given condition for alarm to trigger: Both sensor failure and backup being off.,0,0.16355067,-0.057142653,0.40109807,0.4216317,0.6079875
+Sensor has failed.,0,0.08703713,0.032963946,0.21057466,0.308635,0.42969078
+Backup is still on (not off).,0,0.027549405,-0.0039202454,0.1792584,0.45605177,0.47816625
+"Since one of the conditions (backup being off) is not met, the alarm does not trigger.",0,0.1768824,-0.008414213,0.38162512,0.3841536,0.5937452
+"The dough was left at room temperature, allowing yeast fermentation to continue.",1,0.35087693,0.3079,-0.2087013,-0.15064208,0.15957986
+"Yeast fermentation produces carbon dioxide gas as a byproduct, causing the dough to expand.",1,0.36614344,0.36029905,-0.22120947,-0.2597316,0.004713733
+"As the dough absorbed moisture from the warm kitchen air, its volume increased further.",1,0.34970433,0.4285563,-0.30226654,-0.23238717,-0.085276425
+The combination of yeast fermentation and increased moisture led to the dough's expansion.,1,0.3777832,0.41099447,-0.26562706,-0.25663322,-0.04322626

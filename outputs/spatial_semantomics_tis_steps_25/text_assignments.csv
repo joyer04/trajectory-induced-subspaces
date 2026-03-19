@@ -1,0 +1,105 @@
+text,cluster_id,axis_1,axis_2,axis_3,axis_4,axis_5
+Calculate total number of cans collected: 14 (Monday) + 19 (Tuesday) = 33,1,-0.26261255,-0.3424821,-0.14919801,-0.08145682,-0.1295877
+Subtract the number of damaged cans: 33 - 6 = 27,1,-0.20696355,-0.28418723,-0.12393374,-0.0181316,-0.19434753
+The remaining cans are usable.,1,-0.14154969,-0.048550073,-0.230153,-0.16901235,-0.14047463
+We know that all glims are bloops.,0,-0.049095742,0.34968716,-0.1831038,-0.1982394,-0.21222991
+Some bloops are razs.,0,-0.13689317,0.3656335,-0.1304433,-0.11472158,-0.17844166
+"From steps 1 and 2, we can infer that at least one bloop is a raz (since some bloops are razs).",0,-0.2634122,0.34197193,0.012275239,-0.063291624,-0.09144985
+"However, this does not necessarily mean that all glims are razs.",0,-0.16963142,0.46614757,-0.21754536,-0.05491355,-0.09622638
+We cannot conclude that some glims are razs based on the given information.,0,-0.22886811,0.42121834,-0.1390255,0.0018412862,-0.050347727
+"Determine the order of arrival for each person: Mina, Joon, Sora",3,-0.309303,0.030335853,0.3444084,-0.0598936,-0.090871215
+Compare the arrival times: Mina arrived before Joon,3,-0.07625876,0.11094182,0.26321048,0.047505964,-0.089396335
+"Since Mina arrived before Joon, and Joon arrived after Sora, it can be concluded that Sora arrived first.",3,-0.10683361,0.14369303,0.34448647,-0.029628182,-0.037175395
+"This month, if rainfall drops, then plant growth will fall.",4,0.15355064,-0.06531874,-0.057303272,0.17917487,-0.101259716
+"Since plant growth has fallen, the rabbit population will later fall.",4,0.09517198,-0.11436906,-0.06545885,0.17864357,0.054951303
+"In the next step (next month), the rabbit population will continue to fall because of the previous decrease in plant growth.",4,0.065809116,-0.15665542,-0.030474812,0.20270117,0.1053952
+The metal tray is conductive.,2,0.21847948,-0.033889167,0.10109146,-0.20482458,0.09916096
+The ice cube is cold and conducts heat away from itself.,2,0.4036658,0.017069938,0.09697639,-0.2859085,0.043771744
+"As the ice cube melts, it absorbs heat from the surrounding environment (the metal tray).",2,0.44561756,-0.0045816987,0.11066491,-0.34708843,0.09589228
+The absorbed heat causes the metal tray to warm up.,2,0.466944,-0.09460195,0.074874535,-0.2214149,0.16194232
+"When a metal object warms up, it can cause moisture in the air to condense onto its surface.",2,0.50749296,-0.004170955,0.06948154,-0.16962427,-0.05059205
+"In this case, the warmed-up metal tray is likely to be wet because of the condensed water vapor.",2,0.51487327,-0.007226527,0.09509387,-0.13826653,-0.09385579
+Calculate the total number of pencils sold: 23 (morning) + 18 (afternoon) = 41,1,-0.3408684,-0.43727717,-0.13545549,-0.05417096,-0.08519532
+Subtract the number of pencils returned: 41 - 7 = 34,1,-0.33160585,-0.35327345,-0.11916267,-0.048890162,-0.13479562
+The number of pencils that stayed sold is 34,1,-0.2854131,-0.32902545,-0.2550898,0.016362036,-0.13739926
+Given that no kets are lums.,0,-0.14409614,0.49063015,-0.28403425,-0.12712426,0.11742794
+Given that all lums are nops.,0,-0.22945899,0.48535475,-0.24590617,-0.0059235073,0.11573359
+"Since all lums are nops (step 2), and no kets are lums (step 1), it follows that no kets are nops.",0,-0.17857005,0.45936683,-0.20228276,-0.07793508,0.18814148
+"Therefore, the relationship between kets and nops is that kets are not nops.",0,-0.12731871,0.2868571,-0.16337058,-0.03765428,0.27787593
+Identify the sequence of events: A -> B -> C,3,-0.2476252,-0.07133003,0.53720033,-0.00162867,0.08178479
+Determine the order of events based on the given information,3,-0.39089,-0.13306497,0.5906522,0.049959563,0.040005203
+"Since Event A happens first, followed by Event B, and then Event C, Event C is the last to occur.",3,-0.28854015,-0.095454514,0.6079301,0.025201317,0.14574087
+Identify the conditions for the alarm to trigger.,3,0.0396894,0.035917696,0.30572125,0.23633246,0.12945697
+Determine if the condition of the sensor failing is met.,4,0.02521955,-0.02490829,0.17572589,0.34689754,0.07119452
+"Since the sensor failed, this condition is met.",4,0.18650424,0.068330206,0.14870079,0.43416062,0.09220112
+Check if the condition of the backup being off is also met.,4,0.041876774,0.09587014,0.05706581,0.4769022,0.025954437
+"Since the backup stayed on, this condition is not met.",4,0.10598821,0.10594568,-0.02266875,0.4793055,-0.024749048
+"The alarm will only trigger if both conditions are met; since one condition (the sensor failure) is met but the other (the backup being off) is not, the alarm does not trigger.",4,0.029721688,0.09142505,0.23812075,0.49890423,0.06355391
+"The dough is made of flour, water, yeast, and other ingredients.",2,0.052863747,0.04780522,-0.11817081,-0.37251338,0.24561317
+Yeast fermentation produces carbon dioxide gas as a byproduct.,2,0.16178735,-0.050225697,0.016426831,-0.3016067,0.3544162
+"When the dough is placed in a warm environment, the yeast fermentation process accelerates.",2,0.3600981,-0.06866116,0.03962865,-0.35462257,0.4073312
+"As the yeast ferments, it releases more carbon dioxide into the dough.",2,0.27338004,-0.089550264,-0.04668047,-0.36460456,0.43359837
+The increased carbon dioxide bubbles cause the dough to expand and become larger.,2,0.3234313,-0.115186185,-0.078777306,-0.25300702,0.3663234
+Add the amount of money raised on Friday and Saturday to find the total amount of money raised.,1,-0.22390102,-0.39515346,-0.19637771,0.07827754,-0.012055255
+Subtract the cost of supplies from the total amount of money raised.,1,-0.22970447,-0.4550406,-0.31020653,0.07583314,0.062648185
+Total money raised = $125 + $87 = $212,1,-0.15921547,-0.40357277,-0.2838961,0.07197697,-0.0508083
+Remaining money = Total money raised - Cost of supplies,1,-0.19191907,-0.40889952,-0.3934963,0.10642524,0.02592896
+= $212 - $36,1,-0.19406208,-0.39896113,-0.25081074,0.01097242,-0.12513119
+= $176,1,-0.15424797,-0.33342126,-0.36694565,-0.031927016,-0.14912924
+Given that all tars are mivs.,0,-0.18288723,0.45667255,-0.24667695,-0.023217557,-0.06171725
+Given that no mivs are pels.,0,-0.27948722,0.50794303,-0.22044976,0.017558478,0.0050485255
+"Since all tars are mivs (step 1), and no mivs are pels (step 2), we can conclude that there are no tars that are also pels, because if a tar were a pel, it would be an miv by definition.",0,-0.19820397,0.47266287,-0.19999929,0.016257027,0.008688222
+"Therefore, based on the given information, any tar cannot be a pel.",0,-0.09462395,0.35834876,-0.21814148,0.04088957,0.042554446
+Identify that Event D happened before Event B.,3,-0.22952944,-0.08452466,0.5700533,0.11376819,-0.0030656732
+"Since Event A happened after Event B, it is later than Event D.",3,-0.20999521,-0.04163706,0.573769,0.142471,0.10732956
+Determine that Event A and Event C are both after Event B.,3,-0.308801,-0.06602042,0.57214767,0.062731795,0.07966732
+"Conclude that since Event A is before Event C, the order from earliest to latest is: Event D, Event B, Event A, Event C.",3,-0.31393006,-0.06585879,0.6429351,0.015106661,0.1602066
+Overnight temperatures fall below freezing.,2,0.35113287,0.0565833,-0.033366192,0.041980308,-0.095408306
+Road ice increases as a result of the cold temperatures.,2,0.41456053,-0.021138951,-0.012588719,-0.07906937,0.095281735
+Vehicle speed decreases due to the increased road ice.,2,0.37284145,0.0004347388,-0.016013438,0.0526056,0.133951
+Traffic delay increases as a result of the decreased vehicle speed.,4,0.18529354,-0.07368367,0.018625814,0.19206649,0.24718505
+The person walked outside during the rain.,2,0.18931039,0.09065987,0.17518426,0.018633591,-0.48613992
+They opened their umbrella to protect themselves from the rain.,2,0.15701954,0.12881517,0.12997651,-0.07392916,-0.57317626
+"As they were walking, the rain intensified or changed direction, causing them to get soaked.",2,0.21779466,0.12693872,0.15662408,0.018098375,-0.5499622
+"When they returned inside, they took off their shoes and left them wet.",2,0.07716583,0.066419214,0.09754461,-0.123232774,-0.6066723
+"However, the shirt they were wearing was not exposed to the rain and remained dry.",2,0.14461647,0.15776184,0.09308428,0.062075682,-0.5351819
+Calculate the total number of books initially checked out.,1,-0.3685488,-0.40243056,-0.035943247,-0.096106395,-0.047497895
+Subtract the number of books returned from the initial total.,1,-0.37378117,-0.43508735,-0.081691064,-0.09043371,-0.003141787
+Add the remaining number of books for each group (adults and children).,1,-0.3077683,-0.29547676,-0.14168598,-0.187659,-0.008367483
+42 + 31 = 73,1,-0.22335146,-0.23473322,-0.13513441,-0.036010735,-0.077005126
+73 - 9 = 64,1,-0.21280745,-0.1693418,-0.05788614,-0.005898661,-0.15751012
+We know that if some rens are fads.,0,-0.15693083,0.34127796,-0.09250202,-0.13294375,-0.15583469
+All fads are jops.,0,-0.17748544,0.3989828,-0.17248042,-0.19424039,-0.069315664
+"From steps 1 and 2, we can infer that if some rens are fads, then they must also be jops.",0,-0.27142304,0.40231475,-0.04718372,-0.1358369,-0.06515866
+Phone call,3,-0.1391326,-0.038341425,0.04522016,0.0018327635,-0.18261616
+Breakfast,0,-0.117707685,0.05427724,0.017744416,-0.19938527,-0.023175225
+Meeting,3,-0.17342934,0.009198422,0.15111224,-0.19085881,-0.11044314
+A heat spike occurs in the pond.,2,0.31748265,-0.07334986,0.04933101,-0.08784241,-0.045049474
+The rising water temperature causes dissolved oxygen to fall.,2,0.46637967,-0.0079080425,-0.02340009,-0.055321284,-0.026641602
+"As dissolved oxygen levels decrease, fish stress increases.",2,0.2787545,0.043563046,-0.1135049,0.0076335357,0.096058205
+"With increased fish stress, the fish population may become more susceptible to disease and death.",4,0.13726227,0.025141466,-0.08681331,0.0919683,0.058036182
+The phone's battery capacity may have been partially drained due to the ambient temperature during the night.,4,0.32125983,0.07341704,-0.06878644,0.35536274,-0.11630591
+The charger's power output might not be sufficient for the phone's battery size and type.,4,0.091639064,0.2041096,-0.10458754,0.42087027,-0.08423097
+"The charging cable or adapter could be faulty, causing an unstable or low voltage supply.",4,0.28480986,0.056685623,-0.024732076,0.4839482,0.029474312
+"The phone's internal battery management system (BMS) may have malfunctioned, leading to incorrect charge state reporting.",4,0.1411843,0.22250645,-0.05187947,0.4365369,-0.082024835
+"The phone's software may have been configured to limit power consumption during charging, resulting in reduced charge rate.",4,0.2801682,0.062196292,-0.12771514,0.46332783,0.078273
+Calculate the total number of boxes shipped.,1,-0.37042797,-0.3875029,-0.15325059,-0.08367826,-0.024170063
+Add the number of boxes from both batches: 240 + 175 = 415,1,-0.2874127,-0.27341586,-0.15152682,-0.044462085,0.050900396
+Subtract the number of returned boxes: 415 - 58 = 357,1,-0.30883354,-0.27505285,-0.1911821,-0.0502788,-0.12079442
+The remaining boxes are delivered.,1,-0.28629217,-0.2162321,-0.066971734,-0.15183428,-0.03772813
+Given that every vep that is a zor is also a lin.,0,-0.28723124,0.4275617,-0.12662983,-0.075025685,0.24024856
+"Since no lin is a dax, it implies that there are no zors that are dax.",0,-0.25427502,0.33525732,-0.13766372,-0.020218572,0.29817587
+"Therefore, any vep that is a zor cannot be a dax.",0,-0.25300637,0.40221474,-0.17964737,0.05639579,0.3730415
+"Since Task Z finished before Task X, the order is Z -> X.",3,-0.26922718,0.040305074,0.42326695,-0.13416919,0.19530411
+"Task W finished after Task X, so it must come after X in the sequence: Z -> X -> W.",3,-0.2020886,0.04030846,0.35788918,-0.11655304,0.12502128
+"Task Y finished after Task W, so the complete order from earliest to latest is: Z -> X -> W -> Y.",3,-0.2973882,-0.016561799,0.445036,-0.14084813,0.16153625
+Supply decreases due to the factory shutdown.,4,0.2166149,-0.21660219,-0.18662484,0.34075654,0.21101758
+"With reduced supply, prices in the market rise.",4,0.0959191,-0.24204195,-0.30981994,0.2131789,0.18799758
+"As prices rise, consumers may become less willing or able to purchase, leading to a decrease in demand.",4,0.23740724,-0.23349206,-0.24798052,0.24941866,0.23281255
+"The increase in price and subsequent decrease in demand are likely to be temporary, as the market adjusts to the new equilibrium.",4,0.2618357,-0.26656497,-0.21987167,0.23358762,0.26494852
+The glass bottle was initially cold due to being stored in the refrigerator.,2,0.489727,-0.05379305,0.02850509,-0.13265207,-0.17657441
+"When removed from the refrigerator, it came into contact with warmer air temperatures.",2,0.4933967,-0.05771159,0.07222131,-0.19264519,-0.042909943
+"As a result of this temperature change, the glass bottle began to lose heat energy.",2,0.5517946,-0.110671684,0.02134544,-0.06766901,-0.049929846
+The loss of heat energy caused the molecules on the outside surface of the glass bottle to gain kinetic energy and move more rapidly.,2,0.51227236,-0.09981727,0.047670316,-0.22611842,-0.046060238
+This increased movement of molecules led to an increase in evaporation from the surface of the glass bottle.,2,0.5395896,-0.11492706,0.050942663,-0.18346354,-0.11950292
+"As a result of this increased evaporation, the outer surface of the glass bottle became wet within minutes.",2,0.52546734,-0.083802015,0.114337124,-0.14681321,-0.22997019

@@ -1,0 +1,25 @@
+{
+  "trace_count": 20,
+  "step_count": 62,
+  "delta_count": 42,
+  "embedding_model": "local-hashing",
+  "pca_explained_variance_ratio": [
+    0.23999278247356415,
+    0.11547138541936874,
+    0.07047044485807419,
+    0.061891231685876846,
+    0.05413747578859329,
+    0.046062130481004715,
+    0.039122793823480606,
+    0.033694278448820114
+  ],
+  "task_cluster_summary": {
+    "arithmetic": {
+      "cluster_3": 11,
+      "cluster_2": 5,
+      "cluster_4": 5,
+      "cluster_0": 11,
+      "cluster_1": 10
+    }
+  }
+}

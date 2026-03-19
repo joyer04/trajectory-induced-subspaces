@@ -1,0 +1,6 @@
+task_family,correct_dominant_path,incorrect_dominant_path,same_dominant_path,path_js_divergence
+arithmetic,NA->2->4,NA->0->4,False,0.8877807220333356
+temporal_ordering,3->4->3,NA->3->1,False,0.6380049402684271
+commonsense_multihop,1->3->1,1->3->1,True,0.6016187946613851
+causal_micro_world,4->1->3,1->3->3,False,0.49542224210648367
+symbolic_logic,3->0->0,NA->3->0,False,0.30949604601729097

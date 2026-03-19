@@ -1,0 +1,14 @@
+{
+  "scoring_note": "Evidence scores are heuristic 0-100 summaries, not posterior probabilities. They combine sample size, effect size, and consistency/reproducibility components.",
+  "datasets_used": {
+    "temperature_trace_count": 300,
+    "temperature_delta_count": 1002,
+    "repeated_8x5_trace_count": 200,
+    "repeated_8x5_delta_count": 661,
+    "significance_tables": [
+      "outputs/static_dynamic_bridge_repeated_4x5_minilm/prompt_recurrence_significance.csv",
+      "outputs/static_dynamic_bridge_repeated_8x5_minilm/prompt_recurrence_significance.csv",
+      "outputs/static_dynamic_bridge_temperature_minilm/prompt_recurrence_significance.csv"
+    ]
+  }
+}

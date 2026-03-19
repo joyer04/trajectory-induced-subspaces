@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trajectory-Induced Subspaces Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Exploratory Research Dashboard</p>
+          <h1>Trajectory-Induced Subspaces</h1>
+          <p class="lede">
+            A semi-interactive view of the current evidence for static-vs-dynamic reasoning geometry.
+          </p>
+        </div>
+        <div class="hero-links">
+          <a href="../exploratory_research_note.md">Open research note</a>
+          <a href="../finding_evidence_scores.csv">Open evidence scores</a>
+        </div>
+      </header>
+
+      <section class="overview-grid" id="overview-cards"></section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="section-label">Scoreboard</p>
+            <h2>Evidence Scores</h2>
+          </div>
+        </div>
+        <div id="finding-scores"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="section-label">Family Explorer</p>
+            <h2>Residual Geometry By Family</h2>
+          </div>
+          <div class="controls">
+            <label>
+              Family
+              <select id="family-select"></select>
+            </label>
+          </div>
+        </div>
+        <div class="family-grid">
+          <div class="subpanel">
+            <h3>Static vs Residual</h3>
+            <div id="family-alignment"></div>
+          </div>
+          <div class="subpanel">
+            <h3>Phase Path Divergence</h3>
+            <div id="family-phase-path"></div>
+          </div>
+          <div class="subpanel">
+            <h3>Outcome Predictability</h3>
+            <div id="family-predictability"></div>
+          </div>
+          <div class="subpanel">
+            <h3>Temperature Margin</h3>
+            <div id="family-temperature"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="section-label">Prompt Recurrence</p>
+            <h2>Significant Same-Prompt Structure</h2>
+          </div>
+          <div class="controls">
+            <label>
+              Outcome
+              <select id="outcome-filter">
+                <option value="all">All</option>
+                <option value="correct">Correct</option>
+                <option value="incorrect">Incorrect</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="prompt-significance"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <div>
+            <p class="section-label">Phase Divergence</p>
+            <h2>Where Regimes Split Inside A Trace</h2>
+          </div>
+        </div>
+        <div id="phase-divergence-table"></div>
+      </section>
+    </div>
+
+    <script src="./dashboard_data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

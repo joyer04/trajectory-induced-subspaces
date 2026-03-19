@@ -1,0 +1,48 @@
+{
+  "trace_count": 10,
+  "step_count": 40,
+  "delta_count": 30,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "pca_explained_variance_ratio": [
+    0.13261616230010986,
+    0.09614789485931396,
+    0.08559994399547577,
+    0.0742759183049202,
+    0.07047991454601288,
+    0.05287213996052742,
+    0.048891860991716385,
+    0.04722662642598152
+  ],
+  "task_cluster_summary": {
+    "arithmetic": {
+      "cluster_4": 2,
+      "cluster_2": 1,
+      "cluster_3": 1
+    },
+    "symbolic_logic": {
+      "cluster_0": 3,
+      "cluster_1": 1,
+      "cluster_3": 2,
+      "cluster_2": 2
+    },
+    "temporal_ordering": {
+      "cluster_2": 2,
+      "cluster_1": 1,
+      "cluster_0": 1,
+      "cluster_3": 1
+    },
+    "causal_micro_world": {
+      "cluster_2": 2,
+      "cluster_3": 2,
+      "cluster_0": 1,
+      "cluster_1": 1
+    },
+    "commonsense_multihop": {
+      "cluster_4": 2,
+      "cluster_3": 1,
+      "cluster_2": 1,
+      "cluster_1": 2,
+      "cluster_0": 1
+    }
+  }
+}

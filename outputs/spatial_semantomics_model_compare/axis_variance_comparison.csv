@@ -1,0 +1,16 @@
+axis_id,explained_variance_ratio,model
+axis_1,0.16646254062652588,sentence-transformers/all-MiniLM-L6-v2
+axis_2,0.11594662070274353,sentence-transformers/all-MiniLM-L6-v2
+axis_3,0.10374663770198822,sentence-transformers/all-MiniLM-L6-v2
+axis_4,0.08986257016658783,sentence-transformers/all-MiniLM-L6-v2
+axis_5,0.07583143562078476,sentence-transformers/all-MiniLM-L6-v2
+axis_1,0.16328035295009613,sentence-transformers/all-mpnet-base-v2
+axis_2,0.10664969682693481,sentence-transformers/all-mpnet-base-v2
+axis_3,0.08806505799293518,sentence-transformers/all-mpnet-base-v2
+axis_4,0.07979761809110641,sentence-transformers/all-mpnet-base-v2
+axis_5,0.0649925023317337,sentence-transformers/all-mpnet-base-v2
+axis_1,0.13813874125480652,BAAI/bge-small-en-v1.5
+axis_2,0.11375334858894348,BAAI/bge-small-en-v1.5
+axis_3,0.09417808055877686,BAAI/bge-small-en-v1.5
+axis_4,0.08081088960170746,BAAI/bge-small-en-v1.5
+axis_5,0.06224871799349785,BAAI/bge-small-en-v1.5

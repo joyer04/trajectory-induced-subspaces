@@ -1,0 +1,11 @@
+task_family,feature_set,late_cluster_rule_accuracy
+arithmetic,early_only,0.48148148148148145
+arithmetic,early_middle,0.7407407407407407
+causal_micro_world,early_only,0.8367346938775511
+causal_micro_world,early_middle,0.9183673469387755
+commonsense_multihop,early_only,0.4166666666666667
+commonsense_multihop,early_middle,0.48333333333333334
+symbolic_logic,early_only,0.47368421052631576
+symbolic_logic,early_middle,0.6052631578947368
+temporal_ordering,early_only,0.53125
+temporal_ordering,early_middle,0.625
