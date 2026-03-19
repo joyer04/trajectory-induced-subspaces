@@ -2,6 +2,10 @@
 
 Personal learning and exploratory research on reasoning geometry in LLMs.
 
+![Project schematic](./docs/assets/project_schematic.svg)
+
+This cartoon schematic is the current working picture of the project: a static semantic manifold on one side, dynamic reasoning trajectories on the other, and a bridge analysis asking whether the motion is explained by pre-existing axes or by local residual structure formed along the trace.
+
 This repository is a personal learning, experimentation, and exploratory research space.
 
 It is being used as a public workbench for studying reasoning geometry in LLMs:
