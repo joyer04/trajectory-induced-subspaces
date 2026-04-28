@@ -15,6 +15,8 @@ The central question is:
 
 > Does LLM reasoning mostly follow static semantic structure, or does the trajectory itself induce local residual geometry?
 
+There is now adjacent public work arguing for a trajectory-level view of reasoning geometry rather than a purely static representational view, for example Kareem Soliman's 2026 Towards AI article on "trajectory geometry" in arithmetic reasoning ([link](https://pub.towardsai.net/what-does-the-shape-of-thought-look-like-inside-an-llm-475a43093390)). I treat that as related context, not as the same experiment. The project here is more explicitly about decomposing static semantic structure versus residual path structure, and about asking whether those residual paths organize differently by task family and phase.
+
 The project started from a simple intuition: a reasoning trace may not just *select* an axis that is already sitting inside embedding space. It may instead *create* a local subspace as the trace unfolds.
 
 At this point, the project has accumulated two main experimental views:

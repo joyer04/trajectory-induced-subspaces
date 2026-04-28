@@ -8,6 +8,8 @@ The core question is simple:
 
 > Does LLM reasoning mostly follow pre-existing semantic axes, or does the trajectory itself induce local residual structure?
 
+There is now adjacent public writing making a similar high-level pivot from static representation to trajectory geometry, such as Kareem Soliman's 2026 Towards AI article on LLM thought geometry in arithmetic tasks ([link](https://pub.towardsai.net/what-does-the-shape-of-thought-look-like-inside-an-llm-475a43093390)). I read that as useful context, but not as covering the same ground: the focus here is the bridge between static manifold structure and dynamic residual regimes, plus family-specific phase topology.
+
 ## Current Dataset Footprint
 
 - Temperature-conditioned run: `300` traces, `1302` steps, `1002` deltas

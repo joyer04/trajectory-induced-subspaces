@@ -1,0 +1,14 @@
+broad_family,subfamily,clean_status,prompt_count,trace_count,correct_count,incorrect_count
+arithmetic,average_speed,single_outcome,8,24,21,3
+arithmetic,combine_subtract,clean_mixed,2,6,4,2
+arithmetic,combine_subtract,single_outcome,6,18,18,0
+arithmetic,inverse_linear,parser_fragile,2,6,0,6
+arithmetic,inverse_linear,single_outcome,6,18,18,0
+causal,chain_propagation,clean_mixed,6,18,11,7
+causal,chain_propagation,single_outcome,2,6,3,3
+causal,gated_condition,clean_mixed,4,12,6,6
+causal,gated_condition,single_outcome,4,12,3,9
+temporal,full_ordering,single_outcome,8,24,6,18
+temporal,query_extraction,clean_mixed,5,45,15,30
+temporal,query_extraction,parser_fragile,4,36,8,28
+temporal,query_extraction,single_outcome,1,9,0,9

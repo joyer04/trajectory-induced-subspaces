@@ -1,0 +1,7 @@
+mechanism_label,evidence_level,count
+distributed_shaping_candidate,candidate,1
+history_sensitive,candidate,1
+late_split_candidate,candidate,1
+mixed_or_weak,weak,1
+state_dominant,supported,2
+two_stage,supported,1

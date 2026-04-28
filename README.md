@@ -36,6 +36,13 @@ Current exploratory write-up:
 - [Exploratory research note](./outputs/exploratory_research_note.md)
 - [Exploratory dashboard](./outputs/dashboard/index.html)
 - [Blog-style research report](./docs/research_blog_report.md)
+- [Regime mechanism note](./docs/regime_mechanism_note.md)
+
+Related context:
+
+- [LLM Thought Geometry: Psychology's Manifolds Revealed](https://pub.towardsai.net/what-does-the-shape-of-thought-look-like-inside-an-llm-475a43093390)
+
+That article is adjacent in spirit and useful as citation context for trajectory-level reasoning geometry, but this repository goes in a different direction by explicitly decomposing static semantic structure, residual regimes, phase paths, and family-specific transition topology.
 
 If you are browsing this repo on GitHub, the note and dashboard are probably the best entry points.
 

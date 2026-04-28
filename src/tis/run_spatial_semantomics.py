@@ -47,6 +47,16 @@ def parse_args() -> argparse.Namespace:
         default=10,
         help="k for the semantic kNN graph",
     )
+    parser.add_argument(
+        "--disable-visualization",
+        action="store_true",
+        help="Skip UMAP figure generation",
+    )
+    parser.add_argument(
+        "--disable-llm-interpretation",
+        action="store_true",
+        help="Skip Ollama-based cluster and axis labeling",
+    )
     return parser.parse_args()
 
 
@@ -59,6 +69,8 @@ def main() -> None:
         n_axes=args.axes,
         n_clusters=args.clusters,
         ollama_model=args.ollama_model,
+        enable_visualization=not args.disable_visualization,
+        enable_llm_interpretation=not args.disable_llm_interpretation,
     )
     run_spatial_semantomics(texts=texts, output_dir=args.output_dir, config=config)
 
