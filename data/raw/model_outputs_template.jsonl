@@ -1,1 +1,0 @@
-{"prompt_id":"arith_001","task_family":"arithmetic","difficulty":"easy","model":"your-model-name","prompt":"Solve step by step: A store sold 18 notebooks on Monday and 27 on Tuesday. If 9 were returned, how many notebooks were kept sold in total?","raw_output":"1. Add 18 and 27 to get 45.\n2. Subtract 9 returns from 45.\n3. The result is 36.\nFinal answer: 36"}

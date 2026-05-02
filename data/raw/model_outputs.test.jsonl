@@ -1,1 +1,0 @@
-{"prompt_id": "arith_001", "task_family": "arithmetic", "difficulty": "easy", "model": "qwen3:4b", "prompt": "Solve step by step: A class collected 14 cans on Monday and 19 on Tuesday. If 6 were damaged and discarded, how many usable cans remained?", "raw_output": "1. Add Monday's and Tuesday's cans: 14 + 19 = 33  \n2. Subtract damaged cans: 33 - 6 = 27  \nFinal answer: 27"}
