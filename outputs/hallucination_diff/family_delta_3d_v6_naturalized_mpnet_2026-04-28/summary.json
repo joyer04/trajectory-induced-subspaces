@@ -1,0 +1,26 @@
+{
+  "dataset": "data/hallucination_diff/raw/qa_pairs_v6_naturalized_2026-04-28.json",
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "text_field": "answer_text",
+  "pair_count": 100,
+  "base_count": 20,
+  "family_count": 5,
+  "raw_pca3_explained_variance_ratio": [
+    0.04879588633775711,
+    0.04645411670207977,
+    0.04316898435354233
+  ],
+  "raw_pca3_total_explained_variance": 0.1384189873933792,
+  "residual_pca3_explained_variance_ratio": [
+    0.05318493768572807,
+    0.04630705341696739,
+    0.044069092720746994
+  ],
+  "residual_pca3_total_explained_variance": 0.14356108009815216,
+  "outputs": {
+    "raw_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_pca3d.png",
+    "residual_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_pca3d.png",
+    "raw_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_pca3d.csv",
+    "residual_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_pca3d.csv"
+  }
+}
