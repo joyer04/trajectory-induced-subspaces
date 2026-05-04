@@ -1,0 +1,16 @@
+{
+  "dataset": "data/hallucination_diff/raw/qa_pairs_v5_expanded_2026-04-03.json",
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "text_field": "answer_text",
+  "delta_mode": "residual",
+  "pair_count": 100,
+  "family_count": 5,
+  "base_count": 20,
+  "variance_threshold": 0.9,
+  "max_subspace_dim": 6,
+  "mean_rank_at_threshold": 15.4,
+  "mean_effective_rank": 6.0,
+  "mean_within_family_transfer_r2": 0.5258061119207122,
+  "mean_cross_family_transfer_r2": 0.06298977360331696,
+  "mean_off_diagonal_principal_angle_deg": 76.24359436035157
+}

@@ -17,10 +17,16 @@
     0.044069092720746994
   ],
   "residual_pca3_total_explained_variance": 0.14356108009815216,
+  "raw_umap2d_used_umap": true,
+  "residual_umap2d_used_umap": true,
   "outputs": {
     "raw_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_pca3d.png",
     "residual_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_pca3d.png",
+    "raw_umap_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_umap2d.png",
+    "residual_umap_figure": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_umap2d.png",
     "raw_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_pca3d.csv",
-    "residual_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_pca3d.csv"
+    "residual_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_pca3d.csv",
+    "raw_umap_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_umap2d.csv",
+    "residual_umap_coordinates": "outputs/hallucination_diff/family_delta_3d_v6_naturalized_mpnet_2026-04-28/family_delta_residual_umap2d.csv"
   }
 }

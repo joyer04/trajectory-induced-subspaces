@@ -1,0 +1,42 @@
+{
+  "dataset": "data/hallucination_diff/raw/qa_pairs_v7_atlas_2026-05-03.json",
+  "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+  "text_field": "answer_text",
+  "delta_mode": "residual",
+  "scope": "knn_local",
+  "neighbors": 15,
+  "steer_scale": 0.75,
+  "pair_count": 300,
+  "family_count": 5,
+  "baseline_accuracy": 0.9466666666666667,
+  "baseline_macro_f1": 0.9470028937577512,
+  "steered_accuracy": 0.24666666666666667,
+  "steered_macro_f1": 0.242695758781707,
+  "accuracy_delta": -0.7,
+  "macro_f1_delta": -0.7043071349760441,
+  "mean_own_probability_delta": -0.09766702692183514,
+  "mean_prediction_changed_fraction": 0.7233333333333334,
+  "mean_same_family_neighbor_count": 6.773333333333333,
+  "mean_other_family_neighbor_count": 8.226666666666667,
+  "mean_cosine_before_after": 0.8744180611769359,
+  "best_family_reduction": {
+    "error_family": "role_inversion",
+    "sample_count": 60,
+    "baseline_own_probability_mean": 0.4143890835801907,
+    "steered_own_probability_mean": 0.2070646938861636,
+    "own_probability_delta": -0.2073243896940271,
+    "baseline_best_other_probability_mean": 0.16969419655164947,
+    "steered_best_other_probability_mean": 0.23123934059004161,
+    "best_other_probability_delta": 0.06154514403839215
+  },
+  "worst_family_reduction": {
+    "error_family": "definition_substitution",
+    "sample_count": 60,
+    "baseline_own_probability_mean": 0.2488622566159104,
+    "steered_own_probability_mean": 0.20660196014540722,
+    "own_probability_delta": -0.042260296470503195,
+    "baseline_best_other_probability_mean": 0.2237818736571845,
+    "steered_best_other_probability_mean": 0.2396465993596545,
+    "best_other_probability_delta": 0.015864725702469995
+  }
+}

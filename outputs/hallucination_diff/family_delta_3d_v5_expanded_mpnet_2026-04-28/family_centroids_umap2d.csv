@@ -1,0 +1,6 @@
+error_family,pc1,pc2
+causal_substitution,0.15755251,5.232068
+definition_substitution,0.9461943,4.008136
+entity_swap,0.36021525,4.142691
+numeric_distortion,1.5216161,2.9824026
+role_inversion,-0.4451848,3.7018485
